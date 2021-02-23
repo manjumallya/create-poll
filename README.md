@@ -3,7 +3,7 @@ This project is built on VueJS framework making use of state management features
 
 The automation suite used is Testcafe framework to run end to end tests. 
 
-The application is deployed at following location - https://jolly-saha-8898c9.netlify.app/ using netlify app which deployes the application whenever the code is pushed.
+The application is deployed at following location - https://happy-franklin-7614c8.netlify.app/ using netlify app which deployes the application whenever the code is pushed.
 # Description of the project
 
 The application is a single page application which is divided in three sections. On the first section, the
