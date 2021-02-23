@@ -1,0 +1,64 @@
+{
+  "name": "create-poll",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "serve": "npm start",
+    "start": "webpack --mode development && webpack serve",
+    "build": "webpack --mode development",
+    "lint": "vue-cli-service lint",
+    "ft": "webpack && set LOCAL=true && testcafe chrome -c 1 --app  \"node ./test/testcafe/testcafeStubServer.js\" -e"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.6.5",
+    "express": "latest",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "fusioncharts": "^3.16.0",
+    "html-webpack-plugin": "^5.1.0",
+    "svg-transform-loader": "^2.0.13",
+    "testcafe": "^1.8.0",
+    "testcafe-browser-provider-puppeteer": "^1.4.0",
+    "testcafe-reporter-html": "^1.4.6",
+    "vue-fusioncharts": "^3.1.0",
+    "vue-loader": "^15.9.6",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "vuex": "^3.6.2",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "whatwg-fetch": "^3.5.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

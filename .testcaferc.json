@@ -1,0 +1,22 @@
+{
+  browsers: 'puppeteer',
+  src: 'test/**/*.cspec.js',
+  reporter: [    {
+    name: 'spec'
+  }, {
+    name: 'html',
+    output: './test/testcafe/reports/report.html'
+  },
+    {
+      name: 'json',
+      output: './test/testcafe/reports/report.json'
+    }],
+  screenshots: {
+    takeOnFails: true,
+    path: "./test/testcafe/reports/",
+    fullPage: false,
+    pathPattern: '${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.png'
+  },
+  proxy: ['localhost:8080'],
+  proxyBypass: ['localhost:8080']
+}
